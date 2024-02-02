@@ -2,12 +2,14 @@ const app = Vue.createApp({
     data() {
         // variables
         return {
-
+            showSidebar: true,
+            showPatientQueue: true
         }
     },
     methods: {
-        printHello() {
-            console.log("Hello World!")
+        toggleSidebar() {
+            this.showSidebar = !this.showSidebar
+            console.log(this.showSidebar)
         }
     },
     computed: {
