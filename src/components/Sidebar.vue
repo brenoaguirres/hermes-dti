@@ -1,8 +1,13 @@
 <template>
-    <div class="flex flex-row justify-start w-full bg-teal-100">
-        <button @click="sidebarButtonClick" class="flex flex-row justify-center items-center w-10 h-10 bg-emerald-400 border-y-2 border-e-2 rounded-md border-emerald-100 shadow-md hover:bg-emerald-500">
-            <img src="../assets/list.png" alt="" class="justify-center items-center h-4 w-4">
-        </button>
+    <div class="w-1/5 bg-emerald-300 border-y-2 border-s-2 rounded-md border-slate-200">
+        <ul class="flex flex-col items-center space-y-4 py-4">
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Registros</p></button></li>
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Fila</p></button></li>
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Painel</p></button></li>
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Lixeira</p></button></li>
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Perfil</p></button></li>
+            <li class="bg-green-500 h-8 hover:bg-green-700 rounded-lg w-5/6 shadow-md"><button class="w-full h-full"><img src="" alt=""><p>Sair</p></button></li>
+        </ul>
     </div>
 </template>
 
@@ -14,9 +19,7 @@
             }
         },
         methods: {
-            sidebarButtonClick() {
-                this.$emit('sbrBtnEvent')
-            }
+
         },
     }
 </script>
