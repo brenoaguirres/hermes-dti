@@ -12,17 +12,17 @@ import Connected from './components/Connected.vue'
 import LoginScreen from './components/LoginScreen.vue'
 
 export default {
-components: { Connected, LoginScreen},
-data() {
-  return {
+  components: { Connected, LoginScreen},
+  data() {
+    return {
       isConnected: true
-  }
-},
-methods: {
-      toggleConnection() {
-          this.isConnected = !this.isConnected
-      }
-},
+    }
+  },
+  methods: {
+    toggleConnection() {
+      this.isConnected = !this.isConnected
+    }
+  },
 }
 </script>
 
