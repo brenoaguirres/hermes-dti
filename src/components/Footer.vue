@@ -8,7 +8,7 @@
                 <span class="font-bold">Username:</span><span class="truncate">RH034084</span>
             </p>
             <p class="flex flex-row space-x-2 text-xs">
-                <span class="font-bold">Software version:</span><span>0.0.2 alpha</span>
+                <span class="font-bold">Software version:</span><span>0.0.6 alpha</span>
             </p>
         </div>
         <div class="flex w-full h-full">

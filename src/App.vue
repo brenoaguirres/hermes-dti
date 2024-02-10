@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isConnected">
+  <div v-if="isAuthenticated">
       <Connected />
   </div>
   <div v-else>
@@ -15,12 +15,12 @@ export default {
   components: { Connected, LoginScreen},
   data() {
     return {
-      isConnected: true
+      isAuthenticated: true
     }
   },
   methods: {
     toggleConnection() {
-      this.isConnected = !this.isConnected
+      this.isAuthenticated = !this.isAuthenticated
     }
   },
 }
